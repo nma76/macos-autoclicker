@@ -22,21 +22,26 @@ on run argv
         DisplayError(errorMessage)
     end try
 
+    # Call the main autoclick method
     Autoclick(applicationTitle, clickInterval, keyToClick)
 end run
 
+# Method to print help
 on PrintHelp()
     DisplayInfo("Syntax error!\nMake sure to pass three arguments:\nosascript autoclicker.scpt <process name (string)> <interval in seconds (number)> <key to press (a single character)>\n\n")
 end PrintHelp
 
+# Method to display error messages and quit
 on DisplayError(message)
     tell me to error message number 0
 end DisplayError
 
+# Method to display information without quit
 on DisplayInfo(message)
     log message
 end DisplayInfo
 
+# Method to preform the autoclick
 on Autoclick(applicationTitle, clickInterval, keyToClick)
     # Find out if the application is running
     tell application "System Events"
