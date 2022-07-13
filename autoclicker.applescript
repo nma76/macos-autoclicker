@@ -26,7 +26,7 @@ on run argv
 end run
 
 on PrintHelp()
-    DisplayInfo("Syntax error!\nMake sure to pass three arguments:\nosascript autoclicker.scpt <process name (string)> <interval (number)> <key>\n\n")
+    DisplayInfo("Syntax error!\nMake sure to pass three arguments:\nosascript autoclicker.scpt <process name (string)> <interval in seconds (number)> <key to press (a single character)>\n\n")
 end PrintHelp
 
 on DisplayError(message)
