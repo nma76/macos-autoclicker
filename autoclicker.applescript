@@ -1,5 +1,6 @@
 #
 # Autoclicker in Applescript
+# First version, still work in progress
 #
 on run argv
     # Fetch command line args and make sure the correct amount of arguments are supplied
